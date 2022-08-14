@@ -1,7 +1,7 @@
 #
 #
 #
-FILENAME = "movies.txt"
+FILENAME = "movies.txt.txt"
 
 def write_movies(movies):
     with open(FILENAME, "w") as file:
@@ -17,7 +17,7 @@ def read_movies():
     return movies
 
 def list_movies(movies):
-    for i, movie in enumerate(movie_list, start=1):
+    for i, movie in enumerate(movies, start=1):
         print(f"{i}. {movie}")
     print()
 
